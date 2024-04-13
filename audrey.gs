@@ -19,7 +19,7 @@ function editDocWithGemini() {
       {
         "parts": [
           {
-            "text": "Summarize and enhance the following content: " + text
+            "text": "only fix the spelling and grammar on the selected text: " + text
           }
         ]
       }
