@@ -14,7 +14,8 @@ function editdocwithgemini() {
 
 
  var apiKey = PropertiesService.getScriptProperties().getProperty('GEMINI_API_KEY');
- var apiUrl = "https://generativelanguage.googleapis.com/v1beta/name=models/gemini-1.5-pro-latest:generateContent";
+ var apiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro-latest:generateContent";
+
  var url = apiUrl + "?key=" + apiKey;
 
 
@@ -53,3 +54,6 @@ function editdocwithgemini() {
 function changeFont(paragraph, fontName) {
   paragraph.setFontFamily(fontName);
 }
+
+
+
