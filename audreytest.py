@@ -95,12 +95,13 @@ import os
 import google.generativeai as genai
 
 
+api_key = os.getenv('GOOGLE_API_KEY')
 # Configure API key and model
-genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
+genai.configure(api_key=api_key)
 model = genai.GenerativeModel('gemini-1.5-pro-latest')
 
 
-url = 'https://script.google.com/macros/s/AKfycbyUcIM0_wxrp7EABBJGij9jJ81tbGaR-i3UKrGvxPQwKDLknVAdbD03MyN6CDNhGVPYXA/exec'
+url = 'https://script.google.com/macros/s/AKfycbxACdxAAv-Zqcf0n1WQHAv-oFczv_wJ2wgK0r3GqIsVW-dbKhpJOO-ZyO5pAUtv5K2SKQ/exec'
 
 
 def get_doc_content():
